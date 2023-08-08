@@ -4,8 +4,19 @@
   "description": "![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
   },
   "author": "Mike Frees",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.27",
+    "sass": "^1.64.2"
+  },
+  "dependencies": {
+    "@fontsource/big-shoulders-display": "^5.0.8",
+    "@fontsource/lexend-deca": "^5.0.8",
+    "normalize.css": "^8.0.1"
+  }
 }

@@ -1,0 +1,86 @@
+@import "../../node_modules/@fontsource/big-shoulders-display/700.css";
+@import "../../node_modules/@fontsource/lexend-deca/400.css";
+
+$Bright-Orange: hsl(31, 77%, 52%);
+$Dark-Cyan: hsl(184, 100%, 22%);
+$Very-Dark-Cyan: hsl(179, 100%, 13%);
+
+body {
+    font-family: "lexend deca";
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body, button {
+    background-color: hsl(0, 0%, 95%);
+}
+
+button {
+    width: 60%;
+    min-width: 121px;
+    border-radius: 50px;
+    padding: 1rem;
+    border: none;
+}
+
+main {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 60%;
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 5%;
+        &:first-child {
+            &::before{
+                content: url("../images/icon-sedans.svg");
+            }
+            border-radius: 5px 0px 0px 5px;
+            background-color: $Bright-Orange;
+            button {
+                color: $Bright-Orange;
+            }
+        }
+        &:nth-child(2) {
+            &::before{
+                content: url("../images/icon-suvs.svg");
+            }
+            background-color: $Dark-Cyan;
+            button {
+                color: $Dark-Cyan;
+            }
+        }
+        &:nth-child(3) {
+            &::before{
+                content: url("../images/icon-luxury.svg");
+            }
+            border-radius: 0px 5px 5px 0px;
+            background-color: $Very-Dark-Cyan;
+            button {
+                color: $Very-Dark-Cyan;
+            }
+        }
+
+    }
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1{
+    font-family: "big shoulders display";
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution { font-family: "lexend deca"; font-size: 11px; text-align: center; color: $Dark-Cyan;}
+.attribution a { color: hsl(228, 45%, 44%); }
