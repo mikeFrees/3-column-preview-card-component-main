@@ -28,13 +28,18 @@ main {
   flex-direction: row;
   width: 60%;
   height: 60%;
+  min-height: 400px;
+  min-width: 800px;
 }
 main section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   padding: 5%;
+}
+main section button {
+  margin-top: auto;
 }
 main section:first-child {
   border-radius: 5px 0px 0px 5px;
@@ -68,6 +73,7 @@ main section:nth-child(3) button {
 
 p {
   color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -81,10 +87,31 @@ h1 {
   font-size: 11px;
   text-align: center;
   color: hsl(184, 100%, 22%);
+  position: static;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    margin: 5vh 0;
+    flex-direction: column;
+    width: 90vw;
+    height: 300vh;
+    min-height: 20px;
+    min-width: 20px;
+  }
+  main section {
+    height: 90vh;
+  }
+  main section:first-child {
+    border-radius: 5px 5px 0px 0px;
+  }
+  main section:nth-child(3) {
+    border-radius: 0px 0px 5px 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
