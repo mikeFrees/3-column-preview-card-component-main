@@ -88,15 +88,23 @@ h1{
     color: hsl(0, 0%, 95%);
 }
 
-.attribution { font-family: "lexend deca"; font-size: 11px; text-align: center; color: $Dark-Cyan; position:static;}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-family: "lexend deca"; font-size: 11px; text-align: center; color: hsla(0, 0%, 100%, 0.75);background-color: hsl(184, 100%, 22%);
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+justify-self: flex-end;}
+.attribution a { color: $Bright-Orange; }
 
 @media screen and (max-width: 376px) {
+    body {
+        height: 250vh;
+        justify-content: flex-start;
+    }
     main {
       margin: 5vh 0;
       flex-direction: column;
       width: 90vw;
-      height: 300vh;
+      height: 200vh;
       min-height: 20px;
       min-width: 20px;
       section {

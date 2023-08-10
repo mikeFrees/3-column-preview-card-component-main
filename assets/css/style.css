@@ -86,20 +86,28 @@ h1 {
   font-family: "lexend deca";
   font-size: 11px;
   text-align: center;
-  color: hsl(184, 100%, 22%);
-  position: static;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(184, 100%, 22%);
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+  justify-self: flex-end;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(31, 77%, 52%);
 }
 
 @media screen and (max-width: 376px) {
+  body {
+    height: 250vh;
+    justify-content: flex-start;
+  }
   main {
     margin: 5vh 0;
     flex-direction: column;
     width: 90vw;
-    height: 300vh;
+    height: 200vh;
     min-height: 20px;
     min-width: 20px;
   }
