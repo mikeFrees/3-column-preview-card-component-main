@@ -104,7 +104,8 @@ h1 {
     min-width: 20px;
   }
   main section {
-    height: 90vh;
+    height: 100vh;
+    min-height: 350px;
   }
   main section:first-child {
     border-radius: 5px 5px 0px 0px;

@@ -100,7 +100,8 @@ h1{
       min-height: 20px;
       min-width: 20px;
       section {
-        height: 90vh;
+        height: 100vh;
+        min-height: 350px;
         &:first-child {
             border-radius: 5px 5px 0px 0px;
         }
