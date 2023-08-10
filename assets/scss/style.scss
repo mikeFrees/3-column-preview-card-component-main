@@ -24,7 +24,12 @@ button {
     min-width: 121px;
     border-radius: 50px;
     padding: 1rem;
-    border: none;
+    border: 1px solid white;
+    &:hover:hover{
+        background-color: transparent;
+        color: white;
+    }
+
 }
 
 main {

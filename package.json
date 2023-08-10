@@ -11,8 +11,10 @@
   "author": "Mike Frees",
   "license": "ISC",
   "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-autoprefixer": "^3.0.4",
     "postcss": "^8.4.27",
-    "sass": "^1.64.2"
+    "sass": "^1.65.1"
   },
   "dependencies": {
     "@fontsource/big-shoulders-display": "^5.0.8",
